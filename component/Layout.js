@@ -60,7 +60,7 @@ const Layout = () => {
             document.getElementsByClassName("addCancel")[0].click();
             const prevUsers = value.users;
             prevUsers['users'].push(result);
-          
+            
             value.setMyUsers(prevUsers); // set new Value on AppContext  
         }
 
@@ -80,8 +80,8 @@ const Layout = () => {
             var newUser = prevUsers['users'].filter(user=>{
                 return user.id != userId;
             })
-
-            value.setMyUsers(newUser); // set new Value on AppContext   
+            
+            value.setMyUsers({users : newUser}); // set new Value on AppContext   
         }
 
 
