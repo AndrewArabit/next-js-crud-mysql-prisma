@@ -81,13 +81,7 @@ const Layout = () => {
                 return user.id != userId;
             })
 
-            console.log(value.users)
-            console.log(value)
-            console.log(newUser)
-            console.log("---")
             value.setMyUsers(newUser); // set new Value on AppContext   
-            
-            console.log(value.users)
         }
 
 
